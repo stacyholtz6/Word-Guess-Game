@@ -1,5 +1,5 @@
 // create an array that holds the words
-var girlsList = ["angie", "barbara", "chelsea", "cindy", "diane", "elizabeth", "fran", "grace", "helen", "isabel", "jackie", "karen", "linda", "nancy", "annie", "eve", "kelly", "lynne", "nicole", "amanda"];
+var words = ["angie", "barbara", "chelsea", "cindy", "diane", "elizabeth", "fran", "grace", "helen", "isabel", "jackie", "karen", "linda", "nancy", "annie", "eve", "kelly", "lynne", "nicole", "amanda"];
 
 // create variables to hold wins, losses, guesses left, what letters were guessed
 var wins = 0;
@@ -7,7 +7,7 @@ var losses = 0;
 var guessesLeft = 9;
 var wrongLetters = [];
 var answerArray = [];
-// var blankSpaceAnswerArray = answerArray.join();
+
 
 
 // create variables that reference the html
@@ -20,15 +20,17 @@ var answerText = document.getElementById("answer-text");
 
 
 // picks a random word from girlsList
-var word = girlsList[Math.floor(Math.random() * girlsList.length)];
-
+var word = words[Math.floor(Math.random() * words.length)];
 
 // function to run whenever a user presses a key
 document.onkeyup = function (event) {
   // determines which key was pressed
   var userGuess = event.key.toLowerCase();
   // adds guess to array
-  wrongLetters.push(" " + userGuess);
+  // wrongLetters.push(" " + userGuess);
+
+  // add to answer array
+
 
   // shows blank spaces for the random word
   for (var i = 0; i < word.length; i++) {
@@ -57,6 +59,7 @@ document.onkeyup = function (event) {
 
 
 }
+
 
 // graphic of WOD description when either correctly/incorrectly answered. 
 
