@@ -54,16 +54,16 @@ document.onkeyup = function (event) {
     word = words[Math.floor(Math.random() * words.length)];
     wins++;
     winsText.textContent = wins;
-    // youWonText.textContent = "Correct!! The word was: " + answerArray;
+    // youWonText.textContent = "Correct!! The word was: " + answerArray.join("");
     reset();
 
   }
   else if (guessesLeft === 0) {
-    alert("you lost the word was: " + word)
+    // alert("you lost the word was: " + word)
     word = words[Math.floor(Math.random() * words.length)];
     losses++;
     lossesText.textContent = losses;
-    // youLostText.textContent = "You lost the word was " + word;
+    // youLostText.textContent = "You lost the word was: " + answerArray;
     // images();
     reset();
   }
@@ -119,10 +119,14 @@ function reset() {
 }
 
 // *********things that aren't working***********************
-// having issues with showing correct word when lost cant use word variable because it gives you the answer not the word that was randomly choosen.
+
+// having issues with showing correct word when lost cant use "word" variable because it gives you the answer not the word that was randomly choosen. If you use answer array it gives you the letters you guessed correctly or all blanks if you didn't get any letters right. 
+
 // sometimes when you guess the right word you don't win..... WHY?????
-// not sure how to show YOU WON!!! -- Might be a CSS Thing
-// doesn't show the last letter of the word -- when you complete the word correctly -- never works with amanda -- tends to no let you win even though you got the word right?????????
+
+// not sure how to show YOU WON!!! -- Might be a CSS Thing. Big alert box that says you won... without using "alert in js"
+
+// doesn't show the last letter of the word -- when you complete the word correctly -- 
 
 
 // ****************************Things I would like to add******************
