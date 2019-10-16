@@ -11,6 +11,7 @@ var wrongLetters = [];
 var answerArray = [];
 var correctOne = [];
 
+
 // create variables that reference the html
 var winsText = document.getElementById("wins-text");
 var lossesText = document.getElementById("losses-text");
@@ -53,20 +54,20 @@ document.onkeyup = function (event) {
     console.log("Wrong Letters: " + userGuess);
   }
   if (letterLefttoFind === 0) {
-    // alert("you win");
+    youWonText.textContent = "Correct!! " + correctOne.join("");
     word = words[Math.floor(Math.random() * words.length)];
     wins++;
     winsText.textContent = wins;
-    youWonText.textContent = "Correct!!: " + correctOne;
+    // youWonText.textContent = "Correct!!: " + correctOne.join(" ");
     reset();
 
   }
   else if (guessesLeft === 0) {
-    // alert("you lost the word was: " + word)
+    youLostText.textContent = "You lost the word was: " + word;
     word = words[Math.floor(Math.random() * words.length)];
     losses++;
     lossesText.textContent = losses;
-    youLostText.textContent = "You lost the word was: " + newWord;
+    // youLostText.textContent = "You lost the word was: " + word;
     reset();
   }
 
@@ -81,15 +82,15 @@ function gameStart() {
   letterLefttoFind = word.length;
   correctOne = answerArray;
 
-  console.log(answerArray.join(" "));
-  console.log("word: " + word);
-
   // show user choice, random word, wins/losses/guesses left/wrong letters in the HTML
   answerText.textContent = answerArray.join(" ");
   wrongLettersText.textContent = wrongLetters;
   winsText.textContent = wins;
   lossesText.textContent = losses;
   guessesLeftText.textContent = guessesLeft;
+
+  console.log(answerArray.join(" "));
+  console.log("word: " + word);
 }
 
 // check if answer is correct
@@ -114,6 +115,7 @@ function correctUserGuess(word, guess) {
   }
 }
 
+// resets the game
 function reset() {
   guessesLeft = 10;
   wrongLetters = [];
@@ -121,14 +123,10 @@ function reset() {
   gameStart();
 }
 
-// *********things that aren't working***********************
 
-// having issues with showing correct word when lost cant use "word" variable because it gives you the answer not the word that was randomly choosen. If you use answer array it gives you the letters you guessed correctly or all blanks if you didn't get any letters right. 
+// MOST IMPORTANT LESSON LEARNED --- ORDER MATTERS!!!!!
 
-// sometimes when you guess the right word you don't win..... WHY?????
-
-// doesn't show the last letter of the word -- when you complete the word correctly -- 
-
+// Maybe a timeout function
 
 // ****************************Things I would like to add******************
 // graphic of WOD description when either correctly/incorrectly answered. 

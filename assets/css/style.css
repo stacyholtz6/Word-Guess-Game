@@ -10,5 +10,5 @@ body, html {
 .main {
   background: grey;
   color: black;
-  opacity: .5;
+  /* opacity: .5; */
 }
