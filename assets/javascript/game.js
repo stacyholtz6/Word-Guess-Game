@@ -54,20 +54,18 @@ document.onkeyup = function (event) {
     console.log("Wrong Letters: " + userGuess);
   }
   if (letterLefttoFind === 0) {
-    youWonText.textContent = "Correct!! " + correctOne.join("");
+    youWonText.textContent = "You got it right the word is " + correctOne.join("");
     word = words[Math.floor(Math.random() * words.length)];
     wins++;
     winsText.textContent = wins;
-    // youWonText.textContent = "Correct!!: " + correctOne.join(" ");
     reset();
 
   }
   else if (guessesLeft === 0) {
-    youLostText.textContent = "You lost the word was: " + word;
+    youLostText.textContent = "Oh sad you got it wrong. The word is " + word + ".";
     word = words[Math.floor(Math.random() * words.length)];
     losses++;
     lossesText.textContent = losses;
-    // youLostText.textContent = "You lost the word was: " + word;
     reset();
   }
 
@@ -120,10 +118,14 @@ function reset() {
   guessesLeft = 10;
   wrongLetters = [];
   answerArray = [];
+  // youLostText.textContent = "";
   gameStart();
+  // youLostText.textContent = "";
 }
 
-
+function hint() {
+  document.getElementById("hint").style.display = "block";
+}
 // MOST IMPORTANT LESSON LEARNED --- ORDER MATTERS!!!!!
 
 // Maybe a timeout function

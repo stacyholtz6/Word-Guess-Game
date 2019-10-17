@@ -3,12 +3,16 @@ body, html {
   background: url(../images/blackPlates.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  
 }
 
 
 .main {
-  background: grey;
+  background: rgb(227,227,227, 0.6);
   color: black;
-  /* opacity: .5; */
+  /* margin: auto; */
+  width: 50%;
+}
+
+#hint {
+  display: none;
 }
