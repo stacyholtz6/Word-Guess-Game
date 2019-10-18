@@ -65,7 +65,7 @@ FUNCTIONALITY:
 
 ## Acknowledgments
 
-* PurbpleBooth REAME.md template [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
+* PurbpleBooth README.md template [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
 * Photo from [Unsplash](https://unsplash.com/)
 * Photo credit [Victor Freitas](https://unsplash.com/@victorfreitas)
 
