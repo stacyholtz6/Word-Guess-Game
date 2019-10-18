@@ -53,6 +53,7 @@ document.onkeyup = function (event) {
     wrongLettersText.textContent = wrongLetters;
     console.log("Wrong Letters: " + userGuess);
   }
+  // updates wins and lets you know the word you guessed was correct
   if (letterLefttoFind === 0) {
     youWonText.textContent = "You got it right the word is " + correctOne.join("");
     word = words[Math.floor(Math.random() * words.length)];
@@ -61,6 +62,7 @@ document.onkeyup = function (event) {
     reset();
 
   }
+  // updaes losses and lets you know the incorrect word
   else if (guessesLeft === 0) {
     youLostText.textContent = "Oh sad you got it wrong. The word is " + word + ".";
     word = words[Math.floor(Math.random() * words.length)];
@@ -118,19 +120,26 @@ function reset() {
   guessesLeft = 10;
   wrongLetters = [];
   answerArray = [];
-  // youLostText.textContent = "";
   gameStart();
-  // youLostText.textContent = "";
 }
+
+// function hint() {
+//   document.getElementById("hint").style.display = "block";
+// }
 
 function hint() {
-  document.getElementById("hint").style.display = "block";
+  var hintBtn = document.getElementById("hint");
+  if (hintBtn.style.display === "block") {
+    hintBtn.style.display = "none";
+  }
+  else {
+    hintBtn.style.display = "block";
+  }
 }
-// MOST IMPORTANT LESSON LEARNED --- ORDER MATTERS!!!!!
+// MOST IMPORTANT LESSON LEARNED --- ORDER MATTERS!!!
 
-// Maybe a timeout function
-
-// ****************************Things I would like to add******************
+// ***Things I would like to do *****
+// hide correct and incorrect text after word is shown.
 // graphic of WOD description when either correctly/incorrectly answered. 
 // button to start game onClick
 // buttons start and quit onClick

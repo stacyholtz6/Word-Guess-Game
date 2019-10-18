@@ -39,19 +39,25 @@ FUNCTIONALITY:
 ```
 ##### Hint Button:
 ```
-
+    FUNCTIONALITY:
+      - when clicked it gives the user a hint.
+      - when clicked again the hint is hidden.
 ```
 ![Hint Button](assets/images/clickMe.gif)
 
 ##### Correct Answer:
 ```
-
+    FUNCTIONALITY:
+      - When the user guesses the correct work it is displayed on the screen.
+      - The game resets and is ready for the user to guess a new word.
 ```
 ![correct](assets/images/correct.gif)
 
 ##### Wrong Answer:
 ```
-
+  FUNCTIONALITY:
+    - When the user runs out of guesses the correct word is displayed on the screen.
+    - The game resets and is ready for the user to guess a new word. 
 ```
 ![lost](assets/images/lost.gif)
 
@@ -60,5 +66,7 @@ FUNCTIONALITY:
 ## Acknowledgments
 
 * PurbpleBooth REAME.md template [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* Photos from [Unsplash](https://unsplash.com/)
+* Photo from [Unsplash](https://unsplash.com/)
+* Photo credit [Victor Freitas](https://unsplash.com/@victorfreitas)
+
 
