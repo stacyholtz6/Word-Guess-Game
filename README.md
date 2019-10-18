@@ -1,6 +1,8 @@
 # Word-Guess-Game / Hangman Game
 
 ### Link to Live Game: 
+[](https://stacyholtz6.github.io/Word-Guess-Game/)
+
 
 ## Game Objective:
 ```
