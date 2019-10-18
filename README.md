@@ -39,7 +39,7 @@ FUNCTIONALITY:
 ```
 ##### Hint Button:
 
-![](clickMe.gif)
+![Hint Button](assets/images/clickMe.gif)
 
 ## Acknowledgments
 
