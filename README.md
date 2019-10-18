@@ -38,8 +38,24 @@ FUNCTIONALITY:
 - User can get one hint by clicking the button at the bottom of the page.
 ```
 ##### Hint Button:
+```
 
+```
 ![Hint Button](assets/images/clickMe.gif)
+
+##### Correct Answer:
+```
+
+```
+![correct](assets/images/correct.gif)
+
+##### Wrong Answer:
+```
+
+```
+![lost](assets/images/lost.gif)
+
+
 
 ## Acknowledgments
 
