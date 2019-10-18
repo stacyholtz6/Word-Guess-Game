@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- saved from url=(0076)file:///Users/stacy/Desktop/Code/web-dev-bootcamp/Word-Guess-Game/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Crossfit Hangman</title>
+  <link rel="stylesheet" href="./Crossfit Hangman_files/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="./Crossfit Hangman_files/style.css">
+  <script src="./Crossfit Hangman_files/02403185ac.js" crossorigin="anonymous"></script><link rel="stylesheet" href="./Crossfit Hangman_files/free.min.css" media="all">
+</head>
+
+<body>
+  <div class="container">
+    <div class="container main">
+      <div class="row text-center">
+        <div class="col-12">
+          <h1>Name that Benchmark Workout</h1>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-12 mt-3">
+          <h2>Wins</h2>
+          <h3 id="wins-text">0</h3>
+          <span id="you-won-text"></span>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-12">
+          <h2>Losses:</h2>
+          <span id="you-lost-text"></span>
+          <h3 id="losses-text">0</h3>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-12">
+          <h2>Guesses Remaining</h2>
+          <h3 id="guessesLeft-text">10</h3>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-12">
+          <h2>Answer</h2>
+          <h3 id="answer-text"> _   _   _   _   _   _ </h3>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-12">
+          <h2>Wrong Letters</h2>
+          <hr>
+          <h3 id="wrongLetters-text"></h3>
+          <hr>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-12">
+          <button onclick="hint()" class="btn-dark">
+            <i class="fas fa-dumbbell" aria-hidden="true"></i>
+            CLICK ME
+            <i class="fas fa-dumbbell" aria-hidden="true"></i>
+          </button>
+          <p id="hint">Here is a hint for you: They are names of girls. Now go lift something heavy!!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar fixed-bottom navbar-dark bg-dark justify-content-center">
+    <a class="navbar-brand" href="https://stacyholtz6.github.io/Bootstrap-Portfolio/">©Stacy Holtz</a>
+    <a href="https://github.com/stacyholtz6"><i class="fab fa-github" aria-hidden="true"></i></a>
+  </nav>
+
+  <script src="./Crossfit Hangman_files/game.js"></script>
+  <script src="./Crossfit Hangman_files/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="./Crossfit Hangman_files/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="./Crossfit Hangman_files/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</body></html>
