@@ -5,12 +5,18 @@ body, html {
   background-size: cover;
 }
 
-
+.top {
+  padding-bottom: 20px;
+}
 .main {
   background: rgb(227,227,227, 0.6);
   color: black;
   width: 50%;
+  margin-top: 45px;
+  padding: 30px;
 }
+
+
 
 /* to show/hide hint */
 #hint {
@@ -28,7 +34,7 @@ a:hover {
 .fa-dumbbell,
 .name,
 .fa-github,
-.copy {
+.copy, .navbar {
   color: rgb(227,227,227);
 }
 
