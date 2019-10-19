@@ -123,10 +123,6 @@ function reset() {
   gameStart();
 }
 
-// function hint() {
-//   document.getElementById("hint").style.display = "block";
-// }
-
 function hint() {
   var hintBtn = document.getElementById("hint");
   if (hintBtn.style.display === "block") {
