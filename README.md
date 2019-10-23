@@ -14,8 +14,9 @@
 2. Guess letters to determine word.
 3. If you guess correctly you get a point.
 4. You only get 10 guesses per word.
-
-####### Tips:
+```
+###### Tips:
+```
 -- All the letters are logged. Pay attetnion so you don't use the same wrong letter again.
 -- These are all the names of the "Girls of Crossfit".
 ```
