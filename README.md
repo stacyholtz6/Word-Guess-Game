@@ -60,7 +60,7 @@ FUNCTIONALITY:
 ```
   FUNCTIONALITY:
     - When the user runs out of guesses the correct word is displayed on the screen.
-    - The game resets and is ready for the user to guess a new word. 
+    - The game resets and is ready for the user to guess a new word
 ```
 ![lost](assets/images/lost.gif)
 
